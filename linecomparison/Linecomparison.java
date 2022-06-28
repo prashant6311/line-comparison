@@ -34,10 +34,20 @@ public class Linecomparison {
 		System.out.println(" Line 2 Length : " + lineLength2);
 
 		if (lineLength1.equals(lineLength2))
-			
-		System.out.println(" Both Line Are Equals ");
+
+			System.out.println(" Both Line Are Equals ");
 		else
-		System.out.println(" Both Line Are Not Equals ");
+			System.out.println(" Both Line Are Not Equals ");
+
+		if (lineLength1.compareTo(lineLength2) == 1)
+			System.out.println(" Length of Line Is Greater Than Line2");
+		else if ((lineLength1.compareTo(lineLength2) == -1))
+			System.out.println(" Length of Line Is Greater Than Line1");
+		else
+			System.out.println(" Length Of Line Is Compare To Line2");
+
+		scanner.close();
+
 	}
 
 }
